@@ -231,77 +231,104 @@ main .sobre-nosotros{
     text-align: justify;
 }
 /*footer*/
-footer{
-    background: #645b5b;
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
+
+.pie{
+    background:#383333 ;
 }
-.contenedor-footer{
+
+.logo{
     display: flex;
-    width: 90%;
-    justify-content:space-evenly ;
-    margin: auto;
-    padding-bottom:50px;
-    border-bottom: 1px solid #ccc;
-
-}
-.content-foo{
-    text-align: center;
-
-}
-.content-foo  h4{
-    color: #fff;
-    border-bottom: 3px solid #af20d3;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-
-}
-
-.content-foo p{
-    color:#fff;
-    display: flex;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    justify-content: center;
-}
-.buttons{
-    text-decoration: none;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-    line-height: 60px;
-    text-align: center;  
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
-    
-}
-.buttons a{
-    padding: auto;
-    color: #ccc;
-    justify-content: center;
-
-}
-.buttons a:hover{
-    cursor: pointer;
-    transition: scale (1.2);
-
-}
-.titulo-final{
-    display: flex;
-    text-align: center;
-    margin: 20px 0 0 0;
-    
-}
-.titulo-final h2{
     align-items: center;
-    text-align: center;
-    font-size:40px ;
+}
+span{
+    font-size: 30px;
+}
+.fb{
+    background: blue;
+    padding: 8px;
+    border-radius: 50%;
     color: white;
+}
+.in{
+    background: rgb(146, 17, 77);
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+}
+.tw{
+    background: rgb(0, 81, 255);
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+}
+.wt{
+    background: rgb(12, 138, 12);
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+}
+.li{
+    background: rgb(16, 71, 143);
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+    align-items: center;
+}
+.logotipo{
+    font-size: 18px;
+    color: white;
+}
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.section div{
+    display: flex;
+    flex-direction: column;
+}
+div h4{
+    color: white;
+    padding: 10px 0;
+}
+a{
+    color: rgb(136, 130, 130);
+    text-decoration: none;
+    padding: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
 }
-@media screen and{(max-width: 900px);
+input{
+    background: none;
+    color: white;
+    border: solid 2px white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button{
+    padding:10px 20px;
+    background: white;
+    color: blueviolet;
+    font-size: 18px;
+    cursor: pointer;
+}
+.derechos{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background:#1f1717 ;
+    color: white;
+}
+@media screen and(max-width: 900px){}
     header{
         background-position: center;
     }
@@ -348,8 +375,6 @@ footer{
     .servicio-ind img{
         width: 90%;
     }
-}
-
 @media screen and (max-width:500px){
     nav{
         text-align: center;
