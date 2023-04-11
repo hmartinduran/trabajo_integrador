@@ -25,8 +25,8 @@ header{
     height:600px ; 
     background: #bc4e9c;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4286f43f, #373B44), url(../img.2/montañas\ \(9\).jpg) ;
-    background: linear-gradient(to right, #4286f43f, #373B44), url(../img.2/montañas\ \(9\).jpg);
+    background: -webkit-linear-gradient(to right, #4286f43f, #373B44), url(../img.2/montanas\ \(9\).jpg) ;
+    background: linear-gradient(to right, #4286f43f, #373B44), url(../img.2/montanas\ \(9\).jpg);
 
      /* Chrome 10-25, Safari 5.1-6 */
     
