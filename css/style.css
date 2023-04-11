@@ -92,7 +92,8 @@ main .sobre-nosotros{
 
 }
 .imagen-about-us{
-    width: 48%;
+    width: 38%;
+    max-width: 40%;
 }
 .sobre-nosotros .contenido-textos{
     width: 48%;
