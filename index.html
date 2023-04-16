@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stockpath.bootstrapcd.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style_form.css">
     <script src="https://kit.fontawesome.com/80eba11921.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img5/logo-S.ico" type="image/x-icon">
+    
+    
     <title>PAGINA WEB</title>
 </head>
     <body>
@@ -20,18 +23,21 @@
                     </div>
                     <div class="menu">
                         <ul>
-                            <li><a href="#"></a>Inicio</li>
-                            <li><a href="#"></a>Acerca</li>
-                            <li><a href="#"></a>Servicios</li>
-                            <li><a href="#"></a>Portafolio</li>
-                            <li><a href="#"></a>Contactos</li>
-                            <li><a href="#"></a>Dirección</li>
+                            <a name="arriba"></a>
+                            <a href="#">Inicio</a>
+                            <a href="#nosotros">Nosotros</a>
+                            <a href="#servicios">Servicios</a>
+                            <a href="#portafolio">Portafolio</a>
+                            <a href="#clientes">Clientes</a>
+                            <a href="#Comodidades">Comodidades</a>
+                            <a href="#mapa-direccion">Direccion</a>
                         </ul>
                     </div>
             </div>
+            <a name="nosotros"></a>
                 <div class="content">
-                    <h1>Un Lugar Soñado <br> <span>Tus mejores vacaciones</span> <br>Paisajes Increibles </h1>
-                    <p class="par">Elegi disfrutar tus vacaciones en familia en Nuestro Complejo de Cabañas <br> será la experiencia más alucinante de tu vida <br> Vení conoce UN LUGAR SOÑADO</p>
+                    <h1>Un Lugar Soñado <br> <span>Tus mejores vacaciones</span> <br>Paisajes Increíbles </h1>
+                    <p class="par">Elegí disfrutar tus vacaciones en familia en nuestro Complejo de Cabañas <br> será la experiencia más alucinante de tu vida <br> Vení conoce UN LUGAR SOÑADO</p>
                     <button class="cn"> <a href="#">Conocé Más</a></button>
                     <div class="form">
                         <h2>Ingresa</h2>
@@ -39,18 +45,30 @@
                         <input type="password" name="" placeholder="Ingrese Contraseña">
                         <button class="btnn"> <a href="#">  <i>Iniciar Sesion</i></a></button>
         </header>
+        <center><a href="#arriba">Arriba</a></center>
         <main>
+            <a name="servicios"></a>
             <section class="conteiner-all">
                 <h2 class="titulo">Cabañas "UN LUGAR SOÑADO"</h2>
                     <h3 class="titulo">Nuestras Instalaciones</h3>
+<<<<<<< HEAD
                         <img src="img5/CASA2 (1).jpg" alt="">
                         <p>Estamos ubicados al sur de Argentina más presisamente en Río Negro.
+=======
+                    <img src="img5/CASA3.jpg" alt="">
+                        <p>Estamos ubicados al sur de Argentina más precisamente en Bariloche, provincia de Río Negro.
+>>>>>>> 7dea9d3a366a85f4e2268d16b1b279e81b92ceb5
                             Contamos con un amplio complejo de cabañas.
+                        </p> 
+                        <p>
+                            Las Cabañas Lugar Soñado están situadas en San Martín de los Andes, enfrente del lago Lacar, y ofrece cabañas de madera independientes con conexión de wifi gratis y TV de plasma. Se sirve desayuno y la estación de esquí de Chapelco está a 20 km.
+                            Las cabañas del Lugar Soñado disponen de calefacción, baño privado, zona de comedor independiente y cocina totalmente equipada.
+                            El desayuno diario incluye cruasanes, mantequilla y mermeladas regionales.
+                            Las Cabañas Lugar Soñado ofrecen servicio de masajes a pedido y están a 600 metros de la zona comercial. 
                         </p>
-                        <p>Podes Disfrutar distintas actividades al aire libre y también en nuestros complejos.<p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod facere quidem quibusdam, nihil provident <br> rerum quaerat explicabo dicta suscipit ipsa id iusto? Laborum itaque voluptat</p>
-                        <p>Excursiones guiadas, travesias en la montañas , cabalgatas paseos por el lago y mucho Más</p>
+                        
             </section>
+<<<<<<< HEAD
             <section class="portafolio">
                 <div class="contenedor">
                     <h2 class="titulo">Portafolio</h2>
@@ -75,14 +93,87 @@
                                 <img src="img5/icono5.ico" alt="">
                                 <p>Nuestro Trabajo</p>
                             </div>
+=======
+            <section><!-- Botón para abrir el modal -->
+            <button id="abrir-modal">Contacto</button>
+            <center><a href="#arriba">Arriba</a></center>
+            
+            <!-- Modal -->
+            <div id="modal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal">&times;</span>
+                <form id="formulario">
+                
+                <div class="grupo"><h6>Formulario de contacto</h6></div>
+                <div class="grupo">
+                <input type="text" name="nombre" id="campo_nombre" placeholder="Nombre y Apellido" required><span class="barra"></span>
+                </div>
+                <div class="grupo">
+                <input type="email" name="email" id="campo_email" placeholder="Email" required><span class="barra"></span>
+                </div>
+                <div class="grupo">
+                <input type="number" name="edad" id="campo_edad" placeholder="Edad" required><span class="barra"></span>
+                </div>
+                
+                <div class="grupo">
+                
+                <select id="campo_motivo" name="motivo" required>
+                <option value="">Seleccione opción</option>
+                <option value="Reservas"> Reservas</option>
+                <option value="Consultas">Consultas</option>
+                <option value="Reclamos">Reclamos</option>
+                <option value="Otro">Otro</option>
+                
+                <div class="grupo">
+                <label for="descripcion">Mensaje:</label>
+                <textarea id="campo_mensaje" name="mensaje" required></textarea>
+                </div>
+                
+                
+                <button id="boton_enviar" type="submit">Enviar</button>
+                
+                </form>
+            </div>
+        </section><!--Aquí termina formulario modal-->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script><!--OJO NO MOVER, DE LO CONTRARIO NO ABRE FORM-->
+        <script src="./js/script.js"></script>
+        <script src="./js/ajax.js"></script>
+        <script type="text/javascript" src="js/jspdf.min.js"></script>
+
+        <a name="portafolio"></a>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Portafolio</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img5/FAMILIA5.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img5/icono5.ico" alt="">
+                            <p>Imagen 1</p>
                         </div>
-                        <div class="imagen-port">
-                            <img src="img5/ilustracion2 (4).jpg" alt="">
-                            <div class="hover-galeria">
-                                <img src="img5/icono5.ico" alt="">
-                                <p>Nuestro Trabajo</p>
-                            </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img5/FAMILIA3.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img5/icono5.ico" alt="">
+                            <p>Imagen 2</p>
                         </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img5/FAMILIA4.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img5/icono5.ico" alt="">
+                            <p>Imagen 3</p>
+>>>>>>> 7dea9d3a366a85f4e2268d16b1b279e81b92ceb5
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img5/ilustracion2 (4).jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img5/icono5.ico" alt="">
+                            <p>Imagen 4</p>
+                        </div>
+<<<<<<< HEAD
                         <div class="imagen-port">
                             <img src="img5/FAMILIA3.jpg" alt="">
                             <div class="hover-galeria">
@@ -110,10 +201,42 @@
                                 <img src="img5/icono5.ico" alt="">
                                 <p>Nuestro Trabajo</p>
                             </div>
+=======
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img5/chica1.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img5/icono5.ico" alt="">
+                            <p>Imagen 5</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img5/chica2.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img5/icono5.ico" alt="">
+                            <p>Imagen 6</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img5/lago1.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img5/icono5.ico" alt="">
+                            <p>Imagen 7</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img5/lago2.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img5/icono5.ico" alt="">
+                            <p>Imagen 8</p>
+>>>>>>> 7dea9d3a366a85f4e2268d16b1b279e81b92ceb5
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        <center><a href="#arriba">Arriba</a></center>
+        <a name="clientes"></a>
             <section class="clientes-contendedor">
                 <h2 class="titulo">Nuestros Clientes</h2>
                 <div class="cards">
@@ -135,27 +258,38 @@
                     </div>
                 </div>
             </section>
-            <section class="about-servicies">
+            <center><a href="#arriba">Arriba</a></center>
+            <a name="Comodidades"></a>
+            <section class="Comodidades">
                 <div class="contenedor">
-                    <h2 class="titulo">Nuestros Servicios<h2>
+                    <h2 class="titulo">Nuestras Comodidades<h2>
                     <div class="servicio-cont">
                         <div class="servicio-ind">
-                            <img src="img5/habitacion1.jpg" alt="">
-                            <h3>PRESIDENCIAL</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur  </p>
+                            <img src="img5/familiar.jpeg" alt="">
+                            <h3>Cabaña familiar</h3>
+                            <p>Cabaña ideal para familias grandes</p>
                         </div><div class="servicio-ind">
-                            <img src="img5/habitacion2.jpg" alt="">
-                            <h3>SUITTE</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                            <img src="img5/cuadruple.jpg" alt="">
+                            <h3>Cabaña cuadruple</h3>
+                            <p>Cabaña para cuatro personas</p>
                         </div>
                         <div class="servicio-ind">
-                            <img src="img5/habitacion4.jpg" alt="">
-                            <h3>ALCOBA</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur </p>
+                            <img src="img5/doble.JPG" alt="">
+                            <h3>Cabaña doble</h3>
+                            <p>Cabaña pensada para parejas</p>
                         </div>
                     </div>
                 </div>
             </section>
+            <center><a href="#arriba">Arriba</a></center>
+            <a name="mapa-direccion"></a>
+            <section class="mapa-direccion">
+                <div class="contenedor">
+                    <h2 class="titulo">Nuestra Ubicación<h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.0843471989497!2d-71.3566036!3d-40.1626757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110f315cb1fe87%3A0xe1947bc52f28a594!2sCaba%C3%B1as%20Lugar%20So%C3%B1ado!5e0!3m2!1ses!2sar!4v1681679780222!5m2!1ses!2sar" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <center><a href="#arriba">Arriba</a></center>
             <footer class="pie">
                 <div class="header-dos">
                 <div class="logo">
@@ -208,8 +342,8 @@
                 </div>
                 </div>
                 <div class="derechos">
-                    <p>Copyright@SandraVargas 2023 Tu Lugar Favorito</p>
-                    <p>Privacidad,Politicas. Terminos y Condiciones</p>
+                    <p>Copyright @2023 Un Lugar Soñado, todos los derechos reservados.</p>
+                    <p>Privacidad,Políticas. Términos y Condiciones</p>
                 </div>
             </footer>
     </body>
