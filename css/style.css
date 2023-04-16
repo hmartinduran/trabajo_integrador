@@ -2,31 +2,254 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+main{
+    width: 100%;
+    background-position:center ;
+    background-size: cover;
+    height: 109vh;
+
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+
+}
+.logo-uno{
+    width: 100%;
+    height:60px ;
+    background: #2b4583;
+    padding-right: 40px;
+    padding-left: 70px;
+    padding-top: 10px;
+}
+.logo-uno:hover{
+    cursor: pointer;
+    
+}
+.menu{
+    width: 1000px;
+    background: #2b4583;
+    float: left;
+    height: 60px;
+    color: #fff;
+    font-size: 15px;
+}
+.menu ul:hover {
+    
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 27px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition:0.4s ease-in-out ;
+}
+ul li a:hover{
+    color: rgb(216, 10, 123);
+}
+.search{
+    width: 200px;
+    float: left;
+    margin-left: 270px;
+
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid blueviolet;
+    margin-top: 15px;
+    color: black;
+    border-right: none;
+    font-size: 14px;
+    float: left;
+    padding: 20px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: blueviolet;
+    border: 2px solid blueviolet;
+    margin-top: 13px;
+    color:black ;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline:none ;
+}
+.content{
+    width:1200px ;
+    height:auto ;
+    margin: auto;
+    color: rgb(43, 38, 38);
+    position: relative;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content .cn{
+    width:160px ;
+    height: 40px;
+    background: rgb(130, 48, 207);
+    border: none;
+    margin-bottom: 10px ;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.content .cn a{
+    text-decoration: none;
+    color: rgb(86, 6, 94);
+    transition: .3s ease;
+
+}
+.cn:hover{
+    background: rgb(170, 9, 170);
+}
+.content span{
+    color: white;
+    font-size: 60px;
+}
+.form{
+    width: 300px;
+    height:400px ;
+    background:linear-gradient(to top, rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.3) 50%);
+    position: absolute;
+    top: -20px;
+    left:870px ;
+    padding: 25px;
+}
+.form h2 {
+    width: 220px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(48, 44, 44);
+    font-size: 20px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+
+}
+.form input{
+    width: 240px;
+    height: 50px;
+    background: transparent;
+    border-bottom: 1px solid blueviolet;
+    border-top: none;
+    border-right: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+
+}
+.form input:focus{
+    outline:none ;
+
+}
+::placeholder{
+    color: white;
+    font-family: sans-serif;
+
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: blueviolet;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    transition: 0.4s ease;
+
+}
+.btnn:hover{
+    background: rgb(64, 21, 104);
+    color: black;
+}
+.btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 body{
-    font-family: "open sans";
+    font-family: 'Times New Roman', Times, serif;
+
 }
 .contenedor{
-    padding:60px 0 ;
-    width:90% ;
-    max-width:1000px ;
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
     margin: auto;
-    overflow:hidden;
+    overflow: hidden;
+
 }
-h2{
-    color: #573f3f;
+.titulo{
+    color: #642a73;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
 }
-/* header*/
+/*Header*/
 header{
     width: 100%;
-    height:600px ; 
+    height: 600px;
     background: #bc4e9c;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4286f43f, #373B44), url(../img.2/montanas\ \(9\).jpg) ;
-    background: linear-gradient(to right, #4286f43f, #373B44), url(../img.2/montanas\ \(9\).jpg);
+    background: -webkit-linear-gradient(to right, #4286f43f, #2b4583), url(..//img5/montañas\ \(9\).jpg) ;
+    background: linear-gradient(to right, #4286f43f, #373B44), url(..//img5/montañas\ \(9\).jpg);
 
      /* Chrome 10-25, Safari 5.1-6 */
     
@@ -34,14 +257,12 @@ header{
     
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
+    position:relative;
     
 }
 nav{
     text-align: right;
     padding: 30px 50px 0 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 14px;
 
 }
 nav > a{
@@ -76,51 +297,41 @@ header .textos-header{
     color: #f2f2f2;
 }
 
-.wave{
-    position:absolute;
-    bottom: 0 ;
-    width:100% ;
+/*Nuestras Instalaciones*/
+.conteiner-all{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    margin-top:100px;
 
 }
-/*About us*/
-main .sobre-nosotros{
-    padding: 30px 0 60px 0;
-}
-.contenedor-sobre-nosotros{
-    display: flex;
-    justify-content: space-evenly;
+.conteiner-all-titulo {
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 60px;
 
 }
-.imagen-about-us{
-    width: 38%;
-    max-width: 40%;
+.conteiner-all img{
+    width: 600px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+
 }
-.sobre-nosotros .contenido-textos{
-    width: 48%;
-}
-.contenido-textos h3{
-    margin-bottom:15px ;
-}
-.contenido-textos h3 span{
-    background: #4d0686;
-    color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    width: 30px;
-    padding: 2px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    margin-right:5px ;
-}
-.contenido-textos p{
-    padding: 0px 0px 30px 15px;
+.conteiner-all p{
+    font-size: 20px;
     font-weight: 300;
-    text-align: justify;
+    margin-top: 20px;
+    margin-right: 30px;
+    color: #4b0c80;
 
 }
+
 /*Galeria*/
 .portafolio{
-    background: #f2f2f2;  
+    background: rgb(180, 94, 180);  
 }
 .galeria-port{
     display: flex;
@@ -164,10 +375,10 @@ main .sobre-nosotros{
 .hover-galeria p{
     color: #fff;
 
- }
+}
 .imagen-port:hover .hover-galeria{
     transform: scale(1);
- }
+}
 /*Clientes*/
 .cards{
     display: flex;
@@ -182,7 +393,7 @@ main .sobre-nosotros{
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
 
 }
 .cards .card img{
@@ -210,33 +421,38 @@ main .sobre-nosotros{
     padding-bottom: 30px;
 }
 .servicio-cont{
+    width: 1000px;
+    height: 350px;
+    padding: auto;
+    background: rgb(175, 99, 175);
+    top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 .servicio-ind{
-    width: 25%;
     text-align: center;
 }
 .servicio-ind img{
-    width: 80%;
+    width: 70%;
 }
 .servicio-ind h3{
-    margin: 10px 0;
+    font-size: 20px;
     color: #4d0686;
     justify-content: center;
     align-items: center;
 
 }
 .servicio-ind p{
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 100;
     justify-content: center;
     text-align: justify;
 }
-/*footer*/
 
+/*footer*/
 .pie{
-    background:#383333 ;
+    background:rgb(41, 41, 131) ;
 }
 
 .logo{
@@ -276,7 +492,7 @@ span{
     border-radius: 50%;
     color: white;
 }
-.header{
+.header-dos{
     display: flex;
     justify-content:space-between;
     padding: 20px;
@@ -295,7 +511,7 @@ span{
     display: flex;
     flex-direction: column;
 }
-div h4{
+div h5{
     color: white;
     padding: 10px 0;
 }
@@ -328,116 +544,6 @@ button{
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background:#1f1717 ;
+    background:rgb(24, 24, 105) ;
     color: white;
-}
-@media screen and(max-width: 900px){}
-    header{
-        background-position: center;
-    }
-    .contenedor-sobre-nosotros{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .sobre-nosotros .contenido-textos{
-        width: 90%;
-    }
-    .imagen-about-us{
-        width: 90%;
-    }
-    .imagen-port{
-        width:44% ;
-
-    }
-    .cards{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .cards .card{
-        width: 90%;
-    }
-    .cards .card:first-child{
-        margin-bottom: 30px;
-
-    }
-    .servicio-content{
-        justify-content: center;
-        flex-direction: column;
-
-    }
-    .servicio-ind{
-        width: 100%;
-        text-align: center;
-
-    }
-    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
-        margin-bottom:60px ;
-    }
-    .servicio-ind img{
-        width: 90%;
-    }
-@media screen and (max-width:500px){
-    nav{
-        text-align: center;
-        padding: 30px 0 0 0;
-
-    }
-    nav >a{
-    margin-right: 5px;
-    }
-    .textos-header h1{
-        font-size: 35px;
-    }
-    .textos-header h2{
-        font-size: 20px;
-    }
-    /*About*/
-    
-    .imagen-about-us{
-        margin-bottom: 60%;
-        width: 99%;
-    }
-    .sobre-nosotros .contenido-textos{
-        width: 95%;
-
-    }
-    /*Galeria*/
-    .imagen-port{
-       width: 95%;
-    }
-    /*clientes*/
-    .cards .card{
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;   
-    }
-    .cards .card img{
-        width: 90px;
-        height: 90px;
-    }
-    /* Footer*/
-    .contenedor-footer{
-        flex-direction: column;
-        border: none;
-
-    }
-    .content-foo{
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .content-foo h4 {
-        border: none ;
-    }
-    .content-foo p{
-        color: #ccc;
-        border-bottom:3px solid #af20d3 ;
-        padding-bottom:5px ;
-    }
-    .titulo-final{
-        font-size: 20px;
-    
-    }
 }
