@@ -1,0 +1,26 @@
+/* Estilos para el mensaje de error */
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  /* Estilos para el mensaje de éxito */
+  .success {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el campo de entrada */
+  input {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilos para el mensaje de ayuda */
+  .help {
+    font-size: 12px;
+    color: gray;
+  }
+  
