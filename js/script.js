@@ -36,22 +36,30 @@ document.getElementById("boton_enviar").onclick = function(event) {
 document.getElementById("boton_enviar").addEventListener ("click", function()
 {
     var doc=new jsPDF();
+
+    var imagen = new Image();
+    imagen.src = '/img5/imagenpdf.jpg';
+    doc.addImage(imagen, 'JPEG', 5, 5, 180, 50); //(X, Y, Width, Height)
+    
     let nombre=document.getElementById('campo_nombre').value;
-    doc.text(10,20,"Nombre y Apellido: " + nombre);
+    doc.text(10,65,"Nombre y Apellido: " + nombre);
 
     let email=document.getElementById('campo_email').value;
-    doc.text(10,30,"Email: " + email);
+    doc.text(10,75,"Email: " + email);
 
     let edad=document.getElementById('campo_edad').value;
-    doc.text(10,40,"Edad: " + edad);
+    doc.text(10,85,"Edad: " + edad);
 
     let motivo=document.getElementById('campo_motivo').value;
-    doc.text(10,50,"Motivo del contacto: " + motivo);
+    doc.text(10,95,"Motivo del contacto: " + motivo);
 
     let mensaje=document.getElementById('campo_mensaje').value;
-    doc.text(10,60,"Mensaje: " + mensaje);
+    doc.text(10,105,"Mensaje: " + mensaje);
 
     //doc.addPage();
    // doc.text(20,20,'Contacto');
+   
+   imagen.onload = function(){
     doc.save('Datos_Contacto.pdf');
+   }
 });
