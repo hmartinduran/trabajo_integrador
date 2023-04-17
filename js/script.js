@@ -36,10 +36,14 @@ document.getElementById("boton_enviar").onclick = function(event) {
 document.getElementById("boton_enviar").addEventListener ("click", function()
 {
     var doc=new jsPDF();
+    doc.setFontStyle('arial');
+    doc.setFontSize(12);
 
+  
     var imagen = new Image();
     imagen.src = '/img5/imagenpdf.jpg';
-    doc.addImage(imagen, 'JPEG', 5, 5, 180, 50); //(X, Y, Width, Height)
+    doc.addImage(imagen, 'JPEG', 15, 5, 180, 50); //(X, Y, Width, Height)
+    
     
     let nombre=document.getElementById('campo_nombre').value;
     doc.text(10,65,"Nombre y Apellido: " + nombre);
@@ -59,7 +63,8 @@ document.getElementById("boton_enviar").addEventListener ("click", function()
     //doc.addPage();
    // doc.text(20,20,'Contacto');
    
-   imagen.onload = function(){
+   /*imagen.onload = function(){
     doc.save('Datos_Contacto.pdf');
-   }
+   }*/
+   doc.save('Datos_Contacto.pdf');
 });
