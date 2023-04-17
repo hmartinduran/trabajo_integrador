@@ -67,41 +67,47 @@
             <button id="abrir-modal">Contacto</button>
             <center><a href="#arriba">Arriba</a></center>
             
-            <!-- Modal -->
-            <div id="modal" class="modal">
-            <div class="modal-contenido">
-                <span class="cerrar-modal">&times;</span>
-                <form id="formulario">
+             <!-- Modal -->
+             <div id="modal" class="modal">
+                <div class="modal-contenido">
+                    <span class="cerrar-modal">&times;</span>
+                    <form id="formulario">
+                    
+                    <div class="grupo"><h6>Formulario de contacto</h6></div>
+                    <div class="grupo">
                 
-                <div class="grupo"><h6>Formulario de contacto</h6></div>
-                <div class="grupo">
-                <input type="text" name="nombre" id="campo_nombre" placeholder="Nombre y Apellido" required><span class="barra"></span>
+                        <label for="campo_nombre">Nombre y Apellido:</label>
+                        <input type="text" name="nombre" id="campo_nombre" placeholder="Nombre y Apellido" required><span class="barra"></span>
+                      </div>
+                      <div class="grupo">
+                        <label for="campo_email">Email:</label>
+                        <input type="email" name="email" id="campo_email" placeholder="Email" required><span class="barra"></span>
+                      </div>
+                      <div class="grupo">
+                        <label for="campo_edad">Edad:</label>
+                        <input type="number" name="edad" id="campo_edad" placeholder="Edad" required><span class="barra"></span>
+                      </div>
+                      
+                    
+                    <div class="grupo">
+                    
+                    <select id="campo_motivo" name="motivo" required>
+                    <option value="">Seleccione opción</option>
+                    <option value="Reservas"> Reservas</option>
+                    <option value="Consultas">Consultas</option>
+                    <option value="Reclamos">Reclamos</option>
+                    <option value="Otro">Otro</option>
+                    
+                    <div class="grupo">
+                    <label for="descripcion">Mensaje:</label>
+                    <textarea id="campo_mensaje" name="mensaje" required></textarea>
+                    </div>
+                    
+                    
+                    <button id="boton_enviar" type="submit">Enviar</button>
+                    
+                    </form>
                 </div>
-                <div class="grupo">
-                <input type="email" name="email" id="campo_email" placeholder="Email" required><span class="barra"></span>
-                </div>
-                <div class="grupo">
-                <input type="number" name="edad" id="campo_edad" placeholder="Edad" required><span class="barra"></span>
-                </div>
-                
-                <div class="grupo">
-                
-                <select id="campo_motivo" name="motivo" required>
-                <option value="">Seleccione opción</option>
-                <option value="Reservas"> Reservas</option>
-                <option value="Consultas">Consultas</option>
-                <option value="Reclamos">Reclamos</option>
-                <option value="Otro">Otro</option>
-                
-                <div class="grupo">
-                <label for="descripcion">Mensaje:</label>
-                <textarea id="campo_mensaje" name="mensaje" required></textarea>
-                </div>
-                
-                
-                <button id="boton_enviar" type="submit">Enviar</button>
-                
-                </form>
             </div>
         </section><!--Aquí termina formulario modal-->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script><!--OJO NO MOVER, DE LO CONTRARIO NO ABRE FORM-->
