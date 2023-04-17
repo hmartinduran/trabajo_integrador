@@ -204,6 +204,33 @@ ul li a:hover{
     font-family: sans-serif;
 
 }
+#campo_nombre::placeholder{
+    color: black;
+    font-family: sans-serif;
+
+}
+#campo_email::placeholder{
+    color: black;
+    font-family: sans-serif;
+
+}
+#campo_edad::placeholder{
+    color: black;
+    font-family: sans-serif;
+
+}
+input[id="campo_nombre"]{
+    color:black;
+}
+input[id="campo_email"]{
+    color:black;
+}
+input[id="campo_edad"]{
+    color:black;
+}
+textarea[id="campo_mensaje"]{
+    color:black;
+}
 .btnn{
     width: 240px;
     height: 40px;
