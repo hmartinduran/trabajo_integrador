@@ -35,6 +35,46 @@ main{
     cursor: pointer;
     
 }
+/* Arreglo del menu*/
+.menu {width: 100%;
+    max-width: 1000px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: blueviolet;
+    height: 20px;
+    color: #fff;
+    
+  }
+  
+  .menu a.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  
+
+/*fin del arreglo*/
 .menu{
     width: 1000px;
     background: #2b4583;
@@ -577,3 +617,4 @@ button{
     background:rgb(24, 24, 105) ;
     color: white;
 }
+/* Arreglo boton suscribete*/
